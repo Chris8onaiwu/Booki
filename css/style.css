@@ -2,7 +2,6 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-/*Test*/
 
 :root {
     --main-color: #0065FC;
@@ -67,6 +66,7 @@ body {
 
 h2{
     margin-top: 0px;
+    margin-bottom: 8px;
 }
 
 a{
@@ -172,6 +172,7 @@ a:hover{
    width: 24px;
    height: 24px;
    border-radius: 20px;
+
 }
 
 
@@ -245,6 +246,7 @@ a:hover{
 /*Popular*/
 .popular {
     width: 429px;
+   
 }
 
 .popular-title {
@@ -345,15 +347,114 @@ a:hover{
 }
 
 /*Desktop*/
-@media all (max-width: 1440px){
+@media all and (max-width: 1440px){
 
 }
 
 /*Tablet*/
-@media all (max-width: 1024px){
+@media all and (max-width: 1024px){
+
+/*Accommodation And Popular*/
+.accommodation-and-popular{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Accommodation*/
+.accommodation{
+    width: 924px;
+}
+
+/*Popular*/
+.popular{
+    width: 924px;
+    height: 252px;
+}
+
+.popular-cards{
+    display: flex;
+    gap: 20px;
+}
+
+/*Things to do in Marseille*/
+.to-do img{
+    width: 193px;
+    height: 200px;
+}
+
+.to-do .card{
+    width: 193px;
+    height: 270px;
+}
+
+.to-do-section{
+    height: 380px;
+}
+
+/*Footer*/
+.footer{
+    width: 924px;
+}
+
+.footer .card-content{
+    width: 288px;
+}
 }
 
 /*Mobile*/
-@media all (max-width: 375px) {
-    
+@media all and (max-width: 375px) {
+
+/*Accommodation And Popular*/
+.accommodation-and-popular{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*Accommodation*/
+.accommodation{
+    width: 375px;
+    height: 1435px;
+}
+
+.accommodation-cards .card {
+    width: 335px;
+   
+}
+
+.accommodation-cards img {
+    width: 335px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*Popular*/
+.popular-cards .card {
+    display: flex;
+    margin-top: 33px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+/*Things to do in Marseille*/
+.to-do .card{
+    width: 315px;
+    height: 200px;
+}
+
+.to-do img{
+    width: 315px;
+    height: 141px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*Footer*/
+.footer{
+    width: 924px;
+}
+
+.footer .card-content{
+   
+}
 }
