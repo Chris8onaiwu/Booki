@@ -215,6 +215,7 @@ a:hover{
 
 /*Accommodation*/
 .accommodation {
+    max-width: 871px;
     height: 675px;
     flex-basis: 65%;
     background-color: var(--main-bg-color);
@@ -234,7 +235,7 @@ a:hover{
     max-width: 250px;
     height: 207px;
     margin-top: 30px;
-    flex-basis: 33%;
+    flex-basis: 30%;
 }
 
 .accommodation-cards img { 
@@ -268,7 +269,7 @@ a:hover{
 
 /*Popular*/
 .popular {
-    width: 429px;  
+    max-width: 429px;  
     flex-basis: 33%;
     background-color: var(--main-bg-color);
 }
@@ -317,7 +318,7 @@ a:hover{
 
 /*Things to do in Marseille*/
 .to-do{
-    width: 1340px;
+    max-width: 1340px;
     height: 559px;
     display: flex;
     gap: 30px;
@@ -334,6 +335,7 @@ a:hover{
 }
 
 .to-do .card{
+    max-width: 297px;
     margin-top: 30px;
     height: 439px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -341,7 +343,7 @@ a:hover{
 }
 
 .to-do img{
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -351,8 +353,7 @@ a:hover{
 .footer{
     background-color: #F2F2F2;
     display: flex;
-    width: 1440px;
-
+    max-width: 1340px;
 } 
 
 .footer .card-content{
@@ -367,30 +368,13 @@ a:hover{
     flex-direction: column;
 }
 
-/*Large desktop*/
-@media all and (max-width: 1440px){
-}
-
-/*Desktop*/
-@media all and (max-width: 1440px){ 
-/*Popular*/
-.popular{
-    height: 675px;
-}
-
-.popular .popular-cards{
- 
-}
-
-}
 
 /*Tablet*/
 @media all and (max-width: 1024px){
 
 body{
-    width: 1024px;
+    max-width: 1024px;
 }    
-/*Header*/
 
 /*Nav*/
 .nav{
@@ -405,7 +389,7 @@ body{
 
 /*Accommodation*/
 .accommodation{
-    width: 924px;
+    max-width: 924px;
 }
 
 .accommodation .accommodation-cards{
@@ -420,7 +404,7 @@ body{
 
 /*Popular*/
 .popular{
-    width: 924px;
+    max-width: 924px;
 }
 
 .popular-cards{
@@ -430,6 +414,11 @@ body{
 }
 
 /*Things to do in Marseille*/
+.to-do{
+    max-width: 1340px;
+}
+
+
 .to-do img{
     width: 193px;
     height: 200px;
@@ -457,7 +446,7 @@ body{
 }
 
 /*Mobile*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 550px) {
 
 body{
     width: 375px;
@@ -514,7 +503,10 @@ a + a {
 }
 
 .nav .card{
-    width: 162px;
+    width: 166px;
+    padding: 19px;
+    border-radius: 35px;
+
 }
 
 .nav .card-content{
@@ -522,6 +514,12 @@ a + a {
     display: grid;
     grid-template-columns: 162px 162px;
     padding-left: 0px;
+    padding-bottom: 0px;
+    gap: 0 50px;
+}
+
+.card-content i {
+    font-size: 24px;
 }
 
 .nav .filters-box{
@@ -529,9 +527,7 @@ a + a {
     flex-direction: column;
 }
 
-.nav .filters{
 
-}
 
 /*Accommodation And Popular*/
 .accommodation-and-popular{
