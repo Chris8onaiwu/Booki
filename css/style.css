@@ -153,13 +153,18 @@ a:hover{
 .nav .card-content{
     display: flex;
     align-items: center;
-    width: 770px;
     height: 50px;
-    gap: 15px;
     padding: 20px;
 }
 
-.nav .card{
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 15px;
+}
+
+.nav a{
     border-width: 2px;
     border-style: solid;
     border-color: #D9D9D9;
@@ -167,11 +172,22 @@ a:hover{
     padding: 12px;
     display: flex;
     align-items: center;
+    font-weight: bold;
     gap: 15px;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: #DEEBFF;
+}
+
+.nav a:visited{
+    color: black;
 }
 
 .nav .info{
     display: flex;
+    gap: 10px;
 }
 
 .nav .fa-info{
@@ -335,7 +351,7 @@ a:hover{
 }
 
 .to-do .card{
-    max-width: 297px;
+    width: 297px;
     margin-top: 30px;
     height: 439px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -378,7 +394,11 @@ body{
 
 /*Nav*/
 .nav{
-    width: 928px;
+   max-width: 928px;
+}
+
+.nav .card-content{
+
 }
 
 /*Accommodation And Popular*/
@@ -408,10 +428,18 @@ body{
 }
 
 .popular-cards{
-    display: grid;
-    grid-template-columns: 275px 275px 275px;
+    display: flex;
     gap: 15px;
 }
+
+.popular-cards .card{
+    width: 274px;
+}
+
+.popular img{
+    max-width: 91px;
+}
+
 
 /*Things to do in Marseille*/
 .to-do{
@@ -420,7 +448,7 @@ body{
 
 
 .to-do img{
-    width: 193px;
+    max-width: 193px;
     height: 200px;
 }
 
@@ -434,9 +462,6 @@ body{
 }
 
 /*Footer*/
-.footer{
-    width: 924px;
-}
 
 .footer .card-content{
     width: 288px;
@@ -485,6 +510,20 @@ a + a {
     padding-bottom: 30px;
 }
 
+.nav .search-bar2{
+    height: 49px;
+    background-color: white;
+    border-style: solid;
+    border-right-style: none;
+    border-color: #F2F2F2;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
 .nav .search-bar3{
     width: 49px;
     border-radius: 15px;
@@ -498,8 +537,8 @@ a + a {
     justify-content: center;
     border-radius: 15px;
     background-color: #0065FC;
-    height: 49px;
-    width: 49px;
+    height: 60px;
+    width: 60px;
 }
 
 .nav .card{
@@ -507,6 +546,14 @@ a + a {
     padding: 19px;
     border-radius: 35px;
 
+}
+
+.nav a{
+    width: 161px;
+}
+
+ul{
+    display: ;
 }
 
 .nav .card-content{
@@ -518,15 +565,10 @@ a + a {
     gap: 0 50px;
 }
 
-.card-content i {
-    font-size: 24px;
-}
-
 .nav .filters-box{
     display: flex;
     flex-direction: column;
 }
-
 
 
 /*Accommodation And Popular*/
@@ -590,16 +632,26 @@ a + a {
     margin-bottom: 15px;
 }
 
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline ;
+}
+
 .popular-cards{
-    width: 335px;
     display: flex;
     flex-direction: column;
 }
 
 .popular-cards .card {
     display: flex;
+    width: 325px;
     margin-top: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.popular-cards img{
+    max-width: 111px;
 }
 
 /*Things to do in Marseille*/
@@ -627,7 +679,7 @@ a + a {
 }
 
 .to-do img{
-    width: 315px;
+    max-width: 315px;
     height: 141px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
