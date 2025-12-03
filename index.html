@@ -20,8 +20,8 @@
             <div class="logo">
              <img src="images/logo/Booki.png" alt="Booki logo">
                     <div class="links">
-                     <a href="#" class="top-line">Accommodation</a>
-                     <a href="#" class="top-line">Things to Do</a>
+                     <a href="#accommodation" class="top-line">Accommodation</a>
+                     <a href="#to-do" class="top-line">Things to Do</a>
                     </div>
             </div> 
         </header>   
@@ -31,8 +31,8 @@
             <h3>
                 <div class="search-bar">
                     <div class="search-bar1"> <i class="fa-solid fa-location-dot" style="color: black;"></i></div>
-                    <div class="search-bar2">Marseille, France</div>
-                    <div class="search-bar3">Search</div> <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-text" class="search-input" placeholder="Enter Location">
+                    <div class="search-bar3"> Search</div> <i class="fa-solid fa-magnifying-glass"></i>
                 </div> 
 
                 <div class="filters-box">
@@ -51,10 +51,11 @@
         </nav>    
         <main>
             <div class="accommodation-and-popular">
-                <section class="accommodation">
+                <section id="accommodation" class="accommodation">
                     <h2 class="section-title">Marseille Accommodation</h2>
                     <div class="accommodation-cards">
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/fred-kleber.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -68,10 +69,12 @@
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
+                                </div>   
                             </div>
+                            </a> 
                         </article>
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/febrian-zakaria.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -87,8 +90,10 @@
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
+                            </a>
                         </article>
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/reisetopia.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -103,9 +108,11 @@
                                     <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
-                            </div>        
+                            </div>
+                            </a>        
                         </article>
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/annie-spratt.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -121,8 +128,10 @@
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
+                            </a>
                         </article>
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/marcus-loke.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -138,8 +147,10 @@
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>
+                            </a>
                         </article>
                         <article class="card">
+                            <a href="#">
                             <img src="images/accommodation/nicate-lee.jpg" alt="Image of hotel room showing bed">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -155,7 +166,7 @@
                                     <span class="sr-only">Rated 4 out of 5</span>
                                 </div>
                             </div>   
-                            
+                            </a>
                         </article>
                         <h3 class="show-more">Show more</h3>
                     </div>    
@@ -190,6 +201,7 @@
                                     <h3 class="card-title">Water's Edge Bed & Breakfast</h3>
                                     <p class="card-subtitle">Starting at <span class="euro">$</span>71 per night</p>
                                 </div>
+                                </a>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -222,7 +234,7 @@
             </div>
         </main>
         <article>
-            <div class="to-do-section">
+            <div id="to-do" class="to-do-section">
             <h2 class="section-title">Things to Do in Marseille</h2>
             <div class="to-do">
                 <div class="card">
